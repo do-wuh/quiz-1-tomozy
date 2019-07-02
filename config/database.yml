@@ -1,0 +1,21 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: postgres
+  password: password
+  host: localhost
+
+development:
+  <<: *default
+  database: quiz-1-tomozy_development
+
+test:
+  <<: *default
+  database: quiz-1-tomozy_test
+
+production:
+  <<: *default
+  database: quiz-1-tomozy_production
+  # username: quiz_1
+  # password: <%= ENV['NOMSTER_DATABASE_PASSWORD'] %>
