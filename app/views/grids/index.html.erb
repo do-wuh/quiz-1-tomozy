@@ -1,0 +1,108 @@
+
+<div class="horizontal-align">
+<div class="vertical-align">
+<div class="outer">
+  <div class="inner">
+<div class="box bg-gry float-left">
+    <img src="assets/clear.png" />
+</div>
+<div class="box bg-ind float-left">
+    <img src="assets/clear.png" />
+</div>
+<div class="box bg-prp float-left">
+    <img src="assets/clear.png" />
+</div>
+<div class="box bg-gry float-left">
+    <img src="assets/clear.png" />
+</div>
+<div class="box bg-ind float-left">
+    <img src="assets/clear.png" />
+</div>
+<div class="box bg-prp float-left">
+    <img src="assets/clear.png" />
+</div>
+<div class="box bg-gry float-left">
+    <img src="assets/clear.png" />
+</div>
+<div class="box bg-ind float-left">
+    <img src="assets/clear.png" />
+</div>
+<div class="box bg-prp float-left">
+    <img src="assets/clear.png" />
+</div>
+<div class="box bg-gry float-left">
+    <img src="assets/clear.png" />
+</div>
+<div class="box bg-ind float-left">
+    <img src="assets/clear.png" />
+</div>
+<div class="box bg-prp float-left">
+    <img src="assets/clear.png" />
+</div>
+<div class="box bg-trn float-left">
+
+  <div class="modal fade horizontal-align" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="vertical-align" role="document">
+      <div class="outer">
+        <div class="inner">
+          <%= simple_form_for @grid do |f| %>
+            <%= f.input :name, label: false, placeholder: 'type' %>
+            <%= f.submit 'ENTER', class: 'btn-input' %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button type="image" src="assets/clear.png" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
+      <% if flash[:error].present? %>
+    <div class="error">
+      <%= flash[:error].html_safe %>
+    </div>
+  <% end %>
+    <%= @grid.name %>
+  </button>
+</div>
+<div class="box bg-ind float-left">
+    <img src="assets/clear.png" />
+</div>
+<div class="box bg-prp float-left">
+    <img src="assets/clear.png" />
+</div>
+<div class="box bg-gry float-left">
+    <img src="assets/clear.png" />
+</div>
+<div class="box bg-ind float-left">
+    <img src="assets/clear.png" />
+</div>
+<div class="box bg-prp float-left">
+    <img src="assets/clear.png" />
+</div>
+<div class="box bg-gry float-left">
+    <img src="assets/clear.png" />
+</div>
+<div class="box bg-ind float-left">
+    <img src="assets/clear.png" />
+</div>
+<div class="box bg-prp float-left">
+    <img src="assets/clear.png" />
+</div>
+<div class="box bg-gry float-left">
+    <img src="assets/clear.png" />
+</div>
+<div class="box bg-ind float-left">
+    <img src="assets/clear.png" />
+</div>
+<div class="box bg-prp float-left">
+    <img src="assets/clear.png" />
+</div>
+<div class="box bg-gry float-left">
+    <img src="assets/clear.png" />
+</div>
+<div class="box bg-ind float-left">
+    <img src="assets/clear.png" />
+</div>
+</div>
+</div>
+</div>
+</div>
